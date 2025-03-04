@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: purple;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000; 
+}
+
+header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+
+.main-section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden; 
+}
+
+
+.main-section img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+
+.main-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 25%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1000;
+}
+
+.heading h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+}
+
+
+.scroll-container {
+  position: absolute;
+  top: 40vh; 
+  width: 100%;
+  height: calc(100vh - 70px); 
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.main-second {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 90%;
+}
+
+
+.coach-card {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  border: 10px solid #fff;
+}
+
+.coach-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 16px;
+}
+
+.scrollable-div {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+  height: 400px;
+  overflow-y: auto; 
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  z-index: 1000;
+}
+
+.scrollable-div .scroll-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.players {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  padding: 10px;
+  text-align: center;
+}
+
+.players div {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); 
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.players img {
+  width: 100%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.players p {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+.table-container {
+  position: absolute;
+  width: 100%;
+  top: 165%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  z-index: 1000;
+}
+
+
+.ranking-table {
+  width: 80%; 
+  border-collapse: collapse;
+  text-align: center;
+  background: white; 
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  z-index: 1000;
+}
+
+
+.ranking-table th {
+  background: #2e1a47;
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+}
+
+
+.ranking-table td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  color: black;
+}
+
+.ranking-table tbody tr {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease-in-out;
+}
+
+footer{
+  width: 100%;
+  background: #2E1A47;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  
+}
+
+.footer p{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
